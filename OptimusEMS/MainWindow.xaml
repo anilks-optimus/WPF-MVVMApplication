@@ -1,0 +1,32 @@
+﻿<Window x:Class="OptimusEMS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OptimusEMS"
+        mc:Ignorable="d"
+        Title="OptimusEMS" Height="300" Width="400" 
+        xmlns:Views="clr-namespace:OptimusEMS.Views" 
+        WindowStyle="ToolWindow" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Height" Value="22"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="22"/>
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="22"/>
+            <Setter Property="Width" Value="60"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Name="GridMainWindow">
+        <Views:EmployeeDetailView/>
+    </Grid>
+</Window>
